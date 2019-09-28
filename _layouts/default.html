@@ -3,14 +3,17 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>{{ page.title }} - Kebigon</title>
-		<link rel="stylesheet" href="{% link generated/style.min.css %}" />
+		<link rel="stylesheet" href="{{ site.baseurl }}{% link generated/style.min.css %}" />
+		<script type="text/javascript">
+			var baseurl = "{{ site.baseurl }}";
+		</script>
 	</head>
 	<body class="terminal">
 		<div class="container">
 
 			<div class="terminal-nav">
 				<div class="terminal-logo">
-					<div class="logo terminal-prompt"><a href="/" class="no-style">kebigon.xyz</a></div>
+					<div class="logo terminal-prompt"><a href="{{ site.baseurl }}/" class="no-style">kebigon.xyz</a></div>
 				</div>
 				<div class="terminal-menu">
 					<ul>
@@ -24,7 +27,7 @@
 				<ul>
 {% for page in site.pages %}
 	{% if page.permalink != "/" %}
-					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+					<li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
 	{% endif %}
 {% endfor %}
 				</ul>

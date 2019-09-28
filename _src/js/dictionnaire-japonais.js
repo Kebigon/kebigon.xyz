@@ -63,7 +63,7 @@ function loadFile(file, callback) {
 	var req = new XMLHttpRequest();
 	req.overrideMimeType("application/octet-stream");
 	req.responseType = "arraybuffer";
-	req.open("GET", "/generated/" + file, true);
+	req.open("GET", baseurl + "/generated/" + file, true);
 	req.onload = function () {
 		printStatus(file + " téléchargé.");
 		callback(JSON.parse(new TextDecoder("utf-8").decode(pako.inflate(new Uint8Array(req.response)))));
