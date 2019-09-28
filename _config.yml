@@ -1,0 +1,2 @@
+exclude: ["node_modules", "gulpfile.js", "package-lock.json", "package.json"]
+github: https://github.com/Kebigon

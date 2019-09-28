@@ -1,0 +1,71 @@
+@import '../../node_modules/terminal.css/dist/terminal.css';
+
+:root {
+	/* gruvbox: background */
+	--gb-dm-bg0:          #282828;
+	--gb-dm-bg0-hard:     #1d2021;
+	--gb-dm-bg0-soft:     #32302f;
+	--gb-dm-bg1:          #3c3836;
+	--gb-dm-bg2:          #504945;
+	--gb-dm-bg3:          #665c54;
+	--gb-dm-bg4:          #7c6f64;
+	/* gruvbox: foreground */
+	--gb-dm-fg0:          #fbf1c7;
+	--gb-dm-fg1:          #ebdbb2;
+	--gb-dm-fg2:          #d5c4a1;
+	--gb-dm-fg3:          #bdae93;
+	--gb-dm-fg4:          #a89984;
+	/* gruvbox: colors */
+	--gb-dm-dark-red:     #cc241d;
+	--gb-dm-dark-green:   #98971a;
+	--gb-dm-dark-yellow:  #d79921;
+	--gb-dm-dark-blue:    #458588;
+	--gb-dm-dark-purple:  #b16286;
+	--gb-dm-dark-aqua:    #689d6a;
+	--gb-dm-dark-orange:  #d65d0e;
+	--gb-dm-dark-gray:    #928374;
+	--gb-dm-light-red:    #fb4934;
+	--gb-dm-light-green:  #b8bb26;
+	--gb-dm-light-yellow: #fabd2f;
+	--gb-dm-light-blue:   #83a598;
+	--gb-dm-light-purple: #d3869b;
+	--gb-dm-light-aqua:   #8ec07c;
+	--gb-dm-light-orange: #f38019;
+	--gb-dm-light-gray:   #a89984;
+
+	/* Terminal CSS: color properties */
+	--background-color:        var(--gb-dm-bg0-soft);
+	--block-background-color:  var(--gb-dm-bg0-hard);
+	--code-bg-color:           var(--gb-dm-bg0-hard);
+	--error-color:             var(--gb-dm-light-red);
+	--font-color:              var(--gb-dm-fg0);
+	--global-font-color:       var(--gb-dm-fg1);
+	--invert-font-color:       var(--gb-dm-bg0-hard);
+	--primary-color:           var(--gb-dm-light-yellow);
+	--progress-bar-background: var(--gb-dm-bg0-hard);
+	--progress-bar-fill:       var(--gb-dm-fg2);
+	--secondary-color:         var(--gb-dm-light-green);
+	--tertiary-color:          var(--gb-dm-light-green);
+	/* Terminal CSS: other properties */
+	--display-h1-decoration:   none;
+	--font-stack:              monospace;
+	--global-font-size:        15px;
+	--global-line-height:      1.4em;
+	--global-space:            10px;
+	--input-style:             solid;
+	--mono-font-stack:         monospace;
+	--page-width:              60em;
+}
+
+input:disabled:placeholder {
+	color:            var(--gb-dm-dark-gray) !important;
+}
+
+:disabled {
+	border-color:     var(--gb-dm-dark-gray) !important;
+	color:            var(--gb-dm-dark-gray) !important;
+}
+
+.btn-fullwidth {
+	width: 100%;
+}

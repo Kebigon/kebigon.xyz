@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>{{ page.title }} - Kebigon</title>
+		<link rel="stylesheet" href="{% link generated/style.min.css %}" />
+	</head>
+	<body class="terminal">
+		<div class="container">
+
+			<div class="terminal-nav">
+				<div class="terminal-logo">
+					<div class="logo terminal-prompt"><a href="/" class="no-style">kebigon.xyz</a></div>
+				</div>
+				<div class="terminal-menu">
+					<ul>
+						<li><a class="menu-item" href="https://heavencraft.fr">Heavencraft</a></li>
+						<li><a class="menu-item" href="{{ site.github }}">Github</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<nav>
+				<ul>
+{% for page in site.pages %}
+	{% if page.permalink != "/" %}
+					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+	{% endif %}
+{% endfor %}
+				</ul>
+			</nav>
+
+{% if page.permalink != "/" %}
+			<h1>{{ page.title }}</h1>
+{% endif %}
+			{{ content }}
+		</div>
+	</body>
+</html>
