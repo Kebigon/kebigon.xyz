@@ -19,11 +19,11 @@
     "gulp-rename": "^1.4.0",
     "gulp-transform": "^3.0.5",
     "gulp-uglify": "^3.0.2",
-    "lunr": "^2.3.6",
-    "lunr-languages": "^1.1.0",
+    "lunr": "^2.3.7",
+    "lunr-languages": "^1.4.0",
     "pako": "^1.0.10",
     "postcss-css-variables": "^0.13.0",
     "precss": "^4.0.0",
-    "terminal.css": "^0.7.0"
+    "terminal.css": "^0.7.1"
   }
 }
