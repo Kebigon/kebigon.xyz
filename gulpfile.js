@@ -17,7 +17,7 @@ const rename = require("gulp-rename");
 const transform = require("gulp-transform");
 const uglify = require("gulp-uglify");
 
-const dictionnaireJaponaisData = "/home/kebigon/Unison/japanese/dictionnaire-japonais.json";
+const dictionnaireJaponaisData = "/home/kebigon/Unison/Documents/japanese/dictionnaire-japonais.json";
 
 /*
  * Generate minified css file

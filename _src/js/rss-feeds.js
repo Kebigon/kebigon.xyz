@@ -1,5 +1,5 @@
 // YuzuRSS server to connect to
-var url = 'http://5.39.83.109:8091/feed/';
+var url = 'http://5.39.83.109:15866';
 
 var id = "videos-feed";
 
@@ -9,15 +9,15 @@ function loadFeeds(urls) {
 	var request = new XMLHttpRequest();
 	request.onload = function () {
 		try {
-			var items = JSON.parse(request.responseText);
+			var feed = JSON.parse(request.responseText);
 
 			document.getElementById(id).innerHTML = "";
-			items.forEach(function (x) {
-				var published = new Date(x.published).toLocaleDateString("fr-FR", options);
-				var author = shorten(x.author, isJapanese(x.author) ? 12 : 20);
+			feed.items.forEach(function (x) {
+				var published = new Date(x.date_published).toLocaleDateString("fr-FR", options);
+				var author = shorten(x.author.name, isJapanese(x.author.name) ? 12 : 20);
 				var title = shorten(x.title, isJapanese(x.title) ? 42 : 69);
 
-				var newItemHtml = '<tr><td>' + published + '</td><td>' + author + '</td><td><a href="' + x.link + '">' + title + '</a></td></tr>';
+				var newItemHtml = '<tr><td>' + published + '</td><td>' + author + '</td><td><a href="' + x.url + '">' + title + '</a></td></tr>';
 				document.getElementById(id).innerHTML += newItemHtml;
 			});
 		} catch (e) {
