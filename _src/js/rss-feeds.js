@@ -1,5 +1,5 @@
 // YuzuRSS server to connect to
-var url = 'http://5.39.83.109:15866';
+var url = 'https://yuzurss.kebigon.xyz';
 
 var id = "videos-feed";
 
