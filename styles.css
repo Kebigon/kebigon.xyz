@@ -1,0 +1,35 @@
+body {
+	background: url(img/bg.png) repeat;
+	font-family: "Source Code Pro", monospace;
+	font-size: 14px;
+}
+
+a {
+	color: #3c3836;
+}
+
+.block {
+	display: block;
+	margin: 0 auto 20px auto;
+}
+
+#menu {
+	text-align: center;
+}
+
+.content {
+	background: #fff;
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: 8px;
+	width: 700px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table td, table th {
+	border: 1px solid #000;
+}

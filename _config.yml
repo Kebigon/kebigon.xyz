@@ -1,2 +1,3 @@
-exclude: ["node_modules", "gulpfile.js", "package-lock.json", "package.json"]
-github: https://github.com/Kebigon
+name: Kebigon
+url: https://kebigon.xyz
+permalink: /writing/:categories/:title
