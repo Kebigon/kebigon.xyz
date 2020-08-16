@@ -1,6 +1,6 @@
 body {
 	background: url(img/bg.png) repeat;
-	font-family: "Source Code Pro", monospace;
+	font-family: "Source Sans Pro", sans;
 	font-size: 14px;
 }
 
@@ -14,6 +14,7 @@ a {
 }
 
 #menu {
+	font-family: "Source Code Pro", monospace;
 	text-align: center;
 }
 
@@ -32,4 +33,20 @@ table {
 
 table td, table th {
 	border: 1px solid #000;
+}
+
+code {
+	background-color: #f9f5d7;
+	color: #3c3836;
+	font-family: "Source Code Pro", monospace;
+}
+
+pre {
+	background-color: #f9f5d7;
+	color: #3c3836;
+	margin: 4px;
+	padding: 10px;
+	white-space: pre-wrap;
+	word-break: break-all;
+	word-wrap: break-word;
 }
