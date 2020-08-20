@@ -1,3 +1,3 @@
 name: Kebigon
 url: https://kebigon.xyz
-permalink: /writing/:categories/:title
+permalink: /writing/:categories/:title:output_ext
